@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>product-detail</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+</html>
+
+<body>
+  <%- include('../includes/navigation.ejs') %>
+  <main class="centered">
+    <h1><%= product.title %></h1>
+    <hr />
+    <h2><%= product.price %></h2>
+    <p><%= product.author %></p>
+    <%- include('../includes/add-to-cart.ejs') %>
+  </main>
+  <%- include('../includes/end.ejs') %>
+</body>
