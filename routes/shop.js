@@ -14,6 +14,8 @@ connection.connect();
 
 router.get("/", shopController.getIndex);
 
-router.get("/product", shopController.getDetail);
+router.get("/product", shopController.getProuct);
+
+router.get("/product/:productId", shopController.getDetail);
 
 module.exports = router;
